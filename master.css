@@ -1,0 +1,93 @@
+*{
+  margin:0;
+}
+body{
+  background: navy;
+  overflow:hidden;
+}
+.wrapper{
+  min-height:100vh;
+  box-sizing:border-box;
+  padding:0;
+  background: url(lamp.png) no-repeat left 150px;
+  background-size: 250px auto;
+}
+.content{
+  max-width:900px;
+  min-height:calc(100vh - 60px);
+  margin:30px auto;
+  background: rgba(255,255,255,0.7);
+}
+.moon{
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  background: url(moon.png);
+  background-size: cover;
+  position: absolute;
+  top:20px;
+  right:20px;
+}
+.clock span{
+  display:block;
+  width:2px;
+  height:55px;
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  left:74px;
+  top:20px;
+  box-shadow: 0 0 3px navy;
+  transform-origin:50% 100%;
+}
+.clock span:first-of-type{
+  width:3px;
+  height:45px;
+  top:30px;
+}
+.clock span:last-of-type{
+  width:1px;
+  height:65px;
+  top:10px;
+}
+
+.clock li{
+  width:10px;
+  height:70px;
+  color:rgba(255,255,255,0.5);
+  text-shadow:0 0 3px navy;
+  position: absolute;
+  left:70px;
+  top:5px;
+  list-style-type:none;
+  text-align: center;
+  transform-origin:50% 100%;
+}
+.snow{
+  display:block;
+  width:9px;
+  height:9px;
+  position:absolute;
+  background: radial-gradient(white 10%, transparent 80%);
+}
+.box{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background: rgba(255,255,255,0.1);
+  position:absolute;
+  left:81px;
+  top:460px;
+
+}
+.box-active{
+  background: rgba(255,255,255,0.5);
+  box-shadow:0 0 10px yellow;
+}
+.box-hover{
+  box-shadow:0 0 10px #0f0;
+}
+
+.box-ok{
+  background:transparent;
+  transform:scale(0.5);
+}
